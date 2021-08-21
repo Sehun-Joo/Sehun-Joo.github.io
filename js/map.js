@@ -26,14 +26,15 @@ function importFile() {
     for (var song in songs) {
       var curScores = songs[song];
 
-      if(songLookup[song] != null){
-
+      if(songLookup[song] != null ){
+        /*
         if(curScores.hasOwnProperty('spb')){
           scores.push(getScoreObj(songLookup[song]),"beginner",curScores["spb"]["clear_type"],curScores["spb"]["ex_score"]);
         }
         if(curScores.hasOwnProperty('spn')){
           scores.push(getScoreObj(songLookup[song],"normal",curScores["spn"]["clear_type"],curScores["spn"]["ex_score"]));
         }
+        */
         if(curScores.hasOwnProperty('sph')){
           scores.push(getScoreObj(songLookup[song],"hyper",curScores["sph"]["clear_type"],curScores["sph"]["ex_score"]));
         }
@@ -80,7 +81,7 @@ function arrToString(arr){
 function getScoreObj(title, difficulty, clear, score){
   var jsonData = {};
 
-  jsonData["title"] = title.replaceAll("\"","\\\"");
+  jsonData["title"] = title.replaceAll("\"","\\\"").replaceAll("\'","\\\'");
   jsonData["difficulty"] = difficulty;
   jsonData["clear"] = clear;
   jsonData["score"] = score;
