@@ -25,20 +25,24 @@ function importFile() {
     
     for (var song in songs) {
       var curScores = songs[song];
-      if(curScores.hasOwnProperty('spb')){
-        scores.push(getScoreObj(songLookup[song]),"beginner",curScores["spb"]["clear_type"],curScores["spb"]["ex_score"]);
-      }
-      if(curScores.hasOwnProperty('spn')){
-        scores.push(getScoreObj(songLookup[song],"normal",curScores["spn"]["clear_type"],curScores["spn"]["ex_score"]));
-      }
-      if(curScores.hasOwnProperty('sph')){
-        scores.push(getScoreObj(songLookup[song],"hyper",curScores["sph"]["clear_type"],curScores["sph"]["ex_score"]));
-      }
-      if(curScores.hasOwnProperty('spa')){
-        scores.push(getScoreObj(songLookup[song],"another",curScores["spa"]["clear_type"],curScores["spa"]["ex_score"]));
-      }
-      if(curScores.hasOwnProperty('spl')){
-        scores.push(getScoreObj(songLookup[song],"leggendaria",curScores["spl"]["clear_type"],curScores["spl"]["ex_score"]));
+
+      if(songLookup[song] != null){
+
+        if(curScores.hasOwnProperty('spb')){
+          scores.push(getScoreObj(songLookup[song]),"beginner",curScores["spb"]["clear_type"],curScores["spb"]["ex_score"]);
+        }
+        if(curScores.hasOwnProperty('spn')){
+          scores.push(getScoreObj(songLookup[song],"normal",curScores["spn"]["clear_type"],curScores["spn"]["ex_score"]));
+        }
+        if(curScores.hasOwnProperty('sph')){
+          scores.push(getScoreObj(songLookup[song],"hyper",curScores["sph"]["clear_type"],curScores["sph"]["ex_score"]));
+        }
+        if(curScores.hasOwnProperty('spa')){
+          scores.push(getScoreObj(songLookup[song],"another",curScores["spa"]["clear_type"],curScores["spa"]["ex_score"]));
+        }
+        if(curScores.hasOwnProperty('spl')){
+          scores.push(getScoreObj(songLookup[song],"leggendaria",curScores["spl"]["clear_type"],curScores["spl"]["ex_score"]));
+        }
       }
       
     }
