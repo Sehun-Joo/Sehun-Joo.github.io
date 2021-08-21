@@ -81,7 +81,7 @@ function arrToString(arr){
 function getScoreObj(title, difficulty, clear, score){
   var jsonData = {};
 
-  jsonData["title"] = title.replaceAll("\"","\\\"").replaceAll("\'","\\\'");
+  jsonData["title"] = title.replaceAll("\"","\\\"");
   jsonData["difficulty"] = difficulty;
   jsonData["clear"] = clear;
   jsonData["score"] = score;
