@@ -48,6 +48,20 @@ body {
    height: auto;
 }
 
+.textbox {
+    padding: 100px;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 50%;
+ 
+    display: block;
+ 
+    height: auto;
+ }
+ 
+
+
 
 
 
@@ -76,6 +90,12 @@ figure figcaption {
 }
 
   
-.description em {
+.description a {
   color: rgb(241, 250, 140);
+}
+
+.fontchange{
+    position: fixed;
+    padding: 20px;
+    width: 400px;
 }
