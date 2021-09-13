@@ -10,16 +10,16 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="fontchange fixed-bottom"><img width=70px src="img/gear.png"></div>
+		<div class="fontchange fixed-bottom"><input id="button" type="image" width=70px src="img/gear.png" /></div>
 		<div id="navigation" >
-			<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+			<nav  class="navbar navbar-expand-lg navbar-dark sticky-top">
 				<div class="container-fluid">
 				  
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav mx-auto"  >
+					<div id="navbarTop" class="navbar-nav mx-auto"  >
 					  <a class="h3 nav-link active pr-5" aria-current="page" href="#">About Me</a>
 					  <a class="h3 nav-link pr-5" href="315/portfolio.html">My Portfolio</a>
 					  <a class="h3 nav-link pr-5" href="315/qualifications.html">Qualifications</a>
@@ -67,9 +67,10 @@
 				
 			</div>
 		</div>
-		
-
-		
-		
 	</body>
+	<script>
+		document.getElementById("button").onclick = function(){
+			document.getElementById("navbarTop").classList.add(' yellowFont');
+		};
+	</script>
 </html>

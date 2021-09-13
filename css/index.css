@@ -99,3 +99,7 @@ figure figcaption {
     padding: 20px;
     width: 400px;
 }
+
+.yellowFont a {
+    color: rgb(241, 250, 140)!important; 
+}
