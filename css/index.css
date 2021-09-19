@@ -1,5 +1,9 @@
-body {
+.bg {
     background-image: url('../img/background.jpg');
+}
+
+.bg2 {
+    background-image: url('../img/city.png');
 }
 
 .nav-link {
@@ -81,7 +85,6 @@ figure img {
 }
 figure figcaption {
     text-align: center;
-    color: #8be9fd;
 }
 
 .navbar-nav > a{
@@ -100,6 +103,27 @@ figure figcaption {
     width: 400px;
 }
 
-.yellowFont a {
+.draculaYellow {
     color: rgb(241, 250, 140)!important; 
+}
+
+.draculaPink {
+    color: rgb(255, 121, 198)!important; 
+}
+.draculaPurple {
+    color: rgb(189, 147, 249)!important;
+}
+
+.draculaBlue{
+    color: #8be9fd;
+}
+
+.oblivionRed {
+    color: #D25252!important; 
+}
+.oblivionBlue {
+    color: #79ABFF!important;
+}
+.oblivionCyan{
+    color: #BED6FF!important;
 }
