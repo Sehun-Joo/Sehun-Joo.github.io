@@ -35,40 +35,40 @@
 			</nav>
 		</div>
 		<div  id="content" >
-			<div id="landing-box" class="round-corner pt-2"  >
+			<div id="landing-box" class="round-corner pt-2 pb-5 px-5"  >
 
                 
-                <h1  class="draculaPink" style="font-size: 35px; ">This page is meant to serve as a taste of the documentation, as well as a history for TnT converters. Also it has over 300 words.</h1>
+                <h1  class="draculaPink" style="font-size: 35px; ">This page is meant to serve as a history an inspiration for the Taiko No Tatsujin Converters.</h1>
 						
+				<p class="description draculaPurple" style="font-size: 30px;word-wrap: normal">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+                    Before this converter was created, there were in fact other converters. However, these were generally closed source and only available in Japanese or Chinese to private circles
+					I decided to go and try to create my own converter so that the western community would have the ability to play their own charts.
+				</p>
 
-				<p class="description draculaPurple" style="font-size: 30px; word-wrap: normal">So you want to learn more about the Taiko no Tatsujin Converter right?
-                The documentation that is listed here is meant to work within the context of reading binary files in hex format. Use HxD please.
-                </p>
-                <p class="description draculaPurple" style="font-size: 30px; word-wrap: normal"> Please keep in mind that this is inteded for little endian, so yo must reverese your hex bytes.
-                Conversion to wii games requires using big endian</p>
-                <p class="description draculaPurple" style="font-size: 30px;  word-wrap: normal">
-                000-1AF - This is the files header. It should be copied and pasted form other official file headers. It also contains the info regarding the timing windows for the charts.
-                </p>
-                <p class="description draculaPurple" style="font-size: 30px;  word-wrap: normal">
-                Then, please keep bytes 1B0-1B3 null.
-                </p>
-                <p class="description draculaPurple" style="font-size: 30px;  word-wrap: normal">
-                    1B4-1B7 bytes represent the healthbar total, which should be 10 27 00 00 , which is 10k in hexadecimal
-                </p>
-
-                <h1  class="draculaPink" style="font-size: 35px;">History</h1>
-						
-
+				<p class="description draculaPurple" style="font-size: 30px;word-wrap: normal">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					Giving credit where credit is due, the converter relies heavily on DarkSynopsis' work on injecting whole song formats into the game.
+					He is the one that figured out the original format for the Nintendo 3ds Taiko no Tatsujin games, and without him a lot of this work would not have been possible.
+				</p>
+				
 				<p class="description draculaPurple" style="font-size: 30px;  word-wrap: normal">
-                Most of the format was actually received from Chinese hackers of the game. They sent us the byte addresses for each relevant part of the game, but it was all in Chinese, and thus required a lot of figuring out on our own what they meant. They also did not explain how to pack these binary files, which involved a process of having to compress them with the lz11 format. In addition, we also had to figure out the specific way of creating aac files and replacing the header with Bandai Namco's proprietary header.
-                </p>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					So to start, most of the format was actually received from Chinese hackers of the game. They sent us the byte addresses for each relevant part of the game, but it was all in Chinese, and thus required a lot of figuring out on our own what they meant. They also did not explain how to pack these binary files, which involved a process of having to compress them with the lz11 format. In addition, we also had to figure out the specific way of creating aac files and replacing the header with Bandai Namco's proprietary header.
+				</p>
 
                 <p class="description draculaPurple" style="font-size: 30px;word-wrap: normal">
+					&nbsp;&nbsp;&nbsp;&nbsp;
                     My favorite part of this project was trying to reverse engineer how measures work.
                     In real life music, music can often have changes in tempo or time signature, and it was completely clear how these were implemented
                     What I discovered was that they would make the measures actually overlap with each other in order to create the illusion of a 3/4 measure or append a barless measure in order to create a 5/4 measure. It was pretty interesting to nbe able to discover some programmer's implementation of musical notation through reverse engineering.
                 </p>
 					
+				<p class="description draculaPurple" style="font-size: 30px;word-wrap: normal">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+                    But ultimately what I learned most from this project was the importance of finding projects that inspire me. Before this I had trouble finding projects to work on to improve my programming skills, but this project made me realize I love making programs if it will be of use to someone directly, such as in a video-game community.
+				</p>
+
 			</div>
 		</div>
 		
