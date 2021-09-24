@@ -23,8 +23,8 @@ function importFile() {
     console.log("pain");
     var songs = JSON.parse(reader.result);
     
-    for (var song in songs) {
-      var curScores = songs[song];
+    for (let song in songs) {
+      let curScores = songs[song];
 
       if(songLookup[song] != null ){
         /*
