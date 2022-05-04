@@ -5,7 +5,7 @@ $.getJSON("https://raw.githubusercontent.com/Sehun-Joo/Sehun-Joo.github.io/main/
 
   for (let songNum in songsData){
     var id = songsData[songNum]["song_id"];
-    var title = songsData[songNum]["title_ascii"];
+    var title = songsData[songNum]["title"];
     console.log(id,title);
     songLookup[id] = title;
   }
