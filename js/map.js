@@ -89,7 +89,7 @@ function getScoreObj(title, difficulty, clear, score){
 
   jsonData["title"] = title.replaceAll("\"","\\\"");
   jsonData["difficulty"] = difficulty;
-  jsonData["clear"] = (clear+14)%8;
+  jsonData["clear"] = (clear+15)%8;
   jsonData["score"] = score;
 
   return jsonData;
