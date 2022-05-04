@@ -1,10 +1,16 @@
 const songLookup = {};
-$.getJSON("https://raw.githubusercontent.com/Sehun-Joo/Sehun-Joo.github.io/main/js/sehundata.json", function(json) {
+$.getJSON("https://raw.githubusercontent.com/Sehun-Joo/Sehun-Joo.github.io/main/js/music_data.json", function(json) {
   var songs = json;
+  var songsData = songs["data"];
 
-    for (const song of songs) {
-      songLookup[song.id] = song.title;
-    }
+  for (let songNum in songsData){
+    var id = songsData[songNum]["song_id"];
+    var title = songsData[songNum]["title_ascii"];
+    console.log(id,title);
+    songLookup[id] = title;
+  }
+
+    
 
     console.log(songLookup[20045]);
     
