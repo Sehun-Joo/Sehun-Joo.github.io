@@ -1,75 +1,128 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Page Title</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="icon" href="./images/icon.png">
 
-		<!-- CSS only -->
-		<link href="css/index.css" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-		<!-- JavaScript Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
-	
-	</head>
-	<body class="bg">
-		<div class="fontchange fixed-bottom"><input id="button" type="image" width=70px src="img/gear.png" /></div>
-		<div id="navigation" >
-			<nav  class="navbar navbar-expand-lg navbar-dark sticky-top">
-				<div class="container-fluid">
-				  
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div id="navbarTop" class="navbar-nav mx-auto"  >
-					  <a class="h3 nav-link active pr-5 draculaBlue" aria-current="page" href="#">About Me</a>
-					  <a class="h3 nav-link pr-5" href="315/portfolio.html">My Portfolio</a>
-					  <a class="h3 nav-link pr-5" href="315/qualifications.html">Qualifications</a>
-					  <a class="h3 nav-link pr-5" href="315/service.html">Service</a>
-					  <a class="h3 nav-link" href="315/sandbox.html">Sandbox</a>
-					</div>
-				  </div>
-				</div>
-			  </nav>
-		</div>
-		<div  id="content" >
-			<div id="landing-box" class="round-corner pt-2"  >
-				<div id="AboutMe" class="mb-5 mt-5">
-					<div class="imgAndCaption d-inline-block"  >
-						<figure class="figure">
-							<img src="img/me.png" class="figure-img img-fluid circle" alt="A generic square placeholder image with rounded corners in a figure.">
-							<figcaption class="h1 draculaBlue">About Me</figcaption>
-						</figure>
-					</div>
-					<div id="content" class="d-inline-block align-top mt-5" style="max-width: 40%;">
-						<h1 class="draculaPink" style="margin-top: 10px; font-size: 90px; ">Hello!</h1>
-						<p class="description draculaPurple" style="font-size: 30px; word-wrap: normal">My name is Sehun Joo. I'm a computer scientist in training. Welcome to my site! <a class="draculaYellow" href="https://i.kym-cdn.com/photos/images/original/001/884/413/b26.gif">Cheesed</a> to meet you!</p>
-						
-					</div>
-				</div>
-				
-				<div id="Education" class="mb-5">
-					<div class="imgAndCaption"  >
-						<figure class="figure">
-							<a href="https://www.tamu.edu/"><img src="img/tamu.jpg" class="figure-img img-fluid circle" alt="A generic square placeholder image with rounded corners in a figure."></a>
-							<figcaption class="h1 draculaBlue">Education</figcaption>
-						</figure>
-						<div id="content" class="d-inline-block align-top mt-5" style="max-width: 40%;">
+        <title>Sehun Joo</title>
+    </head>
+    <body>
+        <!-- nar bar -->
+        <nav>
+            <a class="avatar" href="./index.html">
+                <img src="./images/profile.jpeg" alt="Sehun Joo" class="avatar">
+            </a>
+            <h1>Sehun Joo</h1>
+            <div class="links">
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </div>
+            <div class="icons">
+                <a href="mailto:sehunjob@gmail.com" target="_blank">
+                    <i class="fa fa-envelope-square fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sehun123" target="_blank">
+                    <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+                <a href="./images/CS_IT_SWE_Resume_Template_1.pdf" target="_blank">
+                    <i class="fa fa-pencil-square fa-2x"></i>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <!-- Education section -->
+            <section id="education">
+                <h2>Education</h2>
+                <h3>Texas A&M University</h3>
+                <p>
+                    B.S. Computer Science, Statistics
+                    <br>
+                    GPA: 4.0 / 4.0
+                </p>
+            </section>
+            <!-- Work experience -->
+            <section id="work">
+                <h2>Work</h2>
+                <h3>Rippling</h3>
+                <p>
+                    Some very cool statement about Rippling
+                    <br>
+                    bullet point description
+                    <br>
+                    bullet point description
+                    <br>
+                    bullet point description
+                </p>
 
-							<h1 class="draculaPink" style="margin-top: 20px; font-size: 40px; "><a href="https://www.tamu.edu/">Texas A&M University `23</a></h1>
-							<p class="draculaPurple" style="margin-top: 20px; font-size: 30px;  word-wrap: normal">M.S. Business</p>
-							<p class="draculaPurple" style="margin-top: 20px; font-size: 30px; word-wrap: normal">B.S. Computer Science</p>
-							<p class="draculaPurple" style="margin-top: 20px; font-size: 30px;  word-wrap: normal">Brockman Scholars Program</p>
-							<p class="draculaPurple" style="font-size: 30px;word-wrap: normal">GPA: 4.0/4.0</p>
-							
-						</div>
-					</div> 
-				</div>
-				
-				
-			</div>
-		</div>
-	</body>
-	
+                <h3>Amazon</h3>
+                <p>
+                    Some very cool statement about Amazon
+                    <br>
+                    bullet point description
+                    <br>
+                    bullet point description
+                    <br>
+                    bullet point description
+                </p>
+
+                <h3>Proctor & Gamble</h3>
+                <p>
+                    Some very cool statement about P&G
+                    <br>
+                    bullet point description
+                    <br>
+                    bullet point description
+                    <br>
+                    bullet point description
+                </p>
+            </section>
+            <!-- Personal Projects -->
+            <section id="projects">
+                <h2>Projects</h2>
+                <h3>Project #1</h3>
+                <p>
+                    Project description goes here
+                    <br>
+                    yada yada yada
+                    <br>
+                    more descriptions
+                </p>
+
+                <h3>Project #2</h3>
+                <p>
+                    Project description goes here
+                    <br>
+                    yada yada yada
+                    <br>
+                    more descriptions
+                </p>
+
+                <h3>Project #3</h3>
+                <p>
+                    Project description goes here
+                    <br>
+                    yada yada yada
+                    <br>
+                    more descriptions
+                </p>
+            </section>
+            <!-- Skill list -->
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <ul>
+                        <li class="skills">Python</li>
+                        <li class="skills">C++</li>
+                        <li class="skills">Java</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

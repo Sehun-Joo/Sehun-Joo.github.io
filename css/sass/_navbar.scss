@@ -1,0 +1,53 @@
+// navbar class
+.avatar {
+  vertical-align: middle;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.links {
+  margin: 30px 0;
+  padding: 15px 0;
+  list-style: none;
+  border-top: 1px solid $primary-line;
+  border-bottom: 1px solid $primary-line;
+}
+
+li a {
+  display: block;
+  padding: 5px 0;
+  color: $primary-icon;
+  font-size: 20px;
+}
+
+nav {
+  padding: 50px;
+  width: 300px;
+  height: 500px;
+  position: fixed;
+}
+
+hr {
+  width: 200px;
+}
+
+// icons
+.fa-envelope-sqaure {
+  color: $primary-icon;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-icon;
+  margin: 0 8px 0 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-envelope-sqaure:hover {
+  color: black;
+}
